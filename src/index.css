@@ -1,0 +1,18 @@
+#root,
+html,
+body {
+  height: 100vh;
+  background-color: #F0FFF0;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
