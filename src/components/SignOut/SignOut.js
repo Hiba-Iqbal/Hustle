@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { signout } from '../../Redux/auth/authActions';
+import "./signOut.css"
 
- 
 const SignOut = ({signout}) => {
     return(
         <div>
-            <button onClick={signout} >Sign Out</button>
+            <button className="signOut" onClick={signout} >Sign Out</button>
         </div>
     )
 }
