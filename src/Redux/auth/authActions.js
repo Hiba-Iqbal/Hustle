@@ -24,9 +24,10 @@ export var signup = ({email,password,fullName}) => async (dispatch) => {
             email,
             createdAt: serverTimeStamp()
         }
-        await firestore.collection("users").doc(uid).set(userInfo)
         history.push("/")
         window.location.reload(false);
+        await firestore.collection("users").doc(uid).set(userInfo)
+       
     } 
     catch (error) {
         console.log(error)
@@ -53,7 +54,10 @@ catch (error) {
 export var signout = () => async (dispatch) => {
     try {
         //signOut user from firebase auth (backend)
+        
         await auth.signOut();
+        history.push("/login")
+        window.location.reload(false);
     } catch (error) {
         console.log(error)
     }
@@ -64,6 +68,8 @@ export var googleSignin = () => async(dispatch)=> {
     try {
      //signin user in firebase auth (google)
      var {user: {displayName,email,uid} ,additionalUserInfo:{isNewUser}} = await auth.signInWithPopup(googleAuthProvider);
+     history.push("/") 
+     window.location.reload(false);
      //save user data to firestore
          if(isNewUser){
              //if new user then add info to firesore
@@ -72,9 +78,7 @@ export var googleSignin = () => async(dispatch)=> {
                email,
                createdAt: serverTimeStamp()
            }
-           await firestore.collection("users").doc(uid).set(userInfo);
-           history.push("/")
-           window.location.reload(false);
+            await firestore.collection("users").doc(uid).set(userInfo);
 }
     } catch (error) {
         console.log(error)
@@ -98,7 +102,6 @@ export var firebaseAuthListener = () => async (dispatch) => {
                         // User is signed in.
                     } else {
                         // No user is signed in.
-                        
                      dispatch(removeUser());
                     }
                   });

@@ -6,6 +6,7 @@ import alanBtn from "@alan-ai/alan-sdk-web";
 import { NewsCards, Modal } from "./components";
 import useStyles from "./styles";
 import logo from "./images/banner.png";
+import SignOut from "./components/SignOut/SignOut";
 const alanKey =
   "f452c7695d4927871db785bc56af85a72e956eca572e1d8b807a3e2338fdd0dc/stage";
 
@@ -48,6 +49,9 @@ const Home = () => {
   }, []);
   return (
     <div className={classes.mainContainer}>
+    <div className={classes.signOut}>
+    <SignOut/>
+    </div>
       <div className={classes.logoContainer}>
         {newsArticles.length ? (
           <div className={classes.infoContainer}>

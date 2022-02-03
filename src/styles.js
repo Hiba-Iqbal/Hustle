@@ -4,6 +4,10 @@ export default makeStyles((theme) => ({
   mainContainer: {
     backgroundColor: "#F0FFF0",
   },
+  signOut:{
+    float:"right",
+    padding: "20px"
+  },
   footer: {
     textAlign: "center",
     position: "fixed",
