@@ -40,7 +40,7 @@ function App({ firebaseAuthListener }) {
           {/* <AppRoute exact path="/landing" component={LandingMain} /> */}
           <AppRoute
             exact
-            path="/"
+            path="/landing"
             component={ViewHome}
             layout={LayoutDefault}
           />

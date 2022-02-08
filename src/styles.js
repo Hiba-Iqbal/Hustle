@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
   mainContainer: {
-    backgroundColor: "#F0FFF0",
+    backgroundColor: "#f8f8f8",
   },
   signOut:{
     float:"right",
