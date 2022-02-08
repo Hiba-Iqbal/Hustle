@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
   mainContainer: {
-    backgroundColor: "#F0FFF0",
+    backgroundColor: "#f8f8f8",
   },
   signOut:{
     float:"right",
@@ -78,7 +78,6 @@ export default makeStyles((theme) => ({
   },
   alanLogo: {
     height: "27vmin",
-    borderRadius: "15%",
     padding: "0 5%",
     margin: "3% 0",
     [theme.breakpoints.down("sm")]: {

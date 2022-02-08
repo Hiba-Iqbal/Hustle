@@ -5,7 +5,7 @@ import NewsCard from "./NewsCard/NewsCard";
 import useStyles from "./styles.js";
 
 const infoCards = [
-  { color: "#242424", title: "Latest News", text: "Give me the latest news" },
+  { color: "#242424", title: "Project Description", text: "What does this app do" },
   {
     color: "#242424",
     title: "News by Categories",
@@ -52,12 +52,12 @@ const NewsCards = ({ articles, activeArticle }) => {
                   {infoCard.title}
                 </Typography>
                 {infoCard.info ? (
-                  <Typography variant="h6" component="h6">
+                  <Typography variant="p" component="p">
                     <strong>{infoCard.title.split(" ")[2]}</strong>: <br />
                     {infoCard.info}
                   </Typography>
                 ) : null}
-                <Typography variant="h6" component="h6">
+                <Typography variant="p" component="p">
                   Try saying: <br /> <i>{infoCard.text}</i>
                 </Typography>
               </div>

@@ -49,19 +49,25 @@ const Home = () => {
   }, []);
   return (
     <div className={classes.mainContainer}>
-    <div className={classes.signOut}>
-    <SignOut/>
-    </div>
+      <div className={classes.signOut}>
+        <SignOut />
+      </div>
       <div className={classes.logoContainer}>
         {newsArticles.length ? (
           <div className={classes.infoContainer}>
             <div className={classes.infoDetails}>
-              <Typography variant="h5" component="h2">
+              <Typography
+                style={{ color: "#242424" }}
+                variant="h5"
+                component="h2">
                 Try saying: Open article number [4]
               </Typography>
             </div>
             <div className={classes.infoDetails}>
-              <Typography variant="h5" component="h2">
+              <Typography
+                style={{ color: "#242424" }}
+                variant="h5"
+                component="h2">
                 Try saying: Go back
               </Typography>
             </div>
@@ -71,7 +77,7 @@ const Home = () => {
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
-      </div>
+    </div>
   );
 };
 
