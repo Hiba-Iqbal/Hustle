@@ -11,7 +11,7 @@ export default makeStyles({
     padding: "10%",
     borderRadius: 10,
     color: "black",
-    backgroundColor: "#d6e6ff",
+    backgroundColor: "#242424",
   },
   infoCard: {
     display: "flex",
