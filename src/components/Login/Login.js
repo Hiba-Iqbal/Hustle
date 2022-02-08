@@ -19,29 +19,29 @@ const Login = ({ signin }) => {
     signin(cred);
   };
   return (
-    <div class="main">
-      <section class="sign-in">
-        <div class="container">
-          <div class="signin-content">
-            <div class="signin-image">
+    <div className="main">
+      <section className="sign-in">
+        <div className="container">
+          <div className="signin-content">
+            <div className="signin-image">
               <figure>
                 <img src={signinImage} alt="sing up image"></img>
               </figure>
-              <a href="/signup" class="signup-image-link">
+              <a href="/signup" className="signup-image-link">
                 Create an account
               </a>
             </div>
 
-            <div class="signin-form">
-              <h2 class="form-title">Log In</h2>
+            <div className="signin-form">
+              <h2 className="form-title">Log In</h2>
               <form
                 onSubmit={handleFormSubmit}
                 method="POST"
-                class="register-form"
+                className="register-form"
                 id="login-form">
-                <div class="form-group">
-                  <label for="your_name">
-                    <i class="fas fa-envelope" style={{ fontSize: "15px" }}></i>
+                <div className="form-group">
+                  <label htmlFor="your_name">
+                    <i className="fas fa-envelope" style={{ fontSize: "15px" }}></i>
                   </label>
                   <input
                     type="text"
@@ -52,9 +52,9 @@ const Login = ({ signin }) => {
                     placeholder="Your Email"
                   />
                 </div>
-                <div class="form-group">
-                  <label for="your_pass">
-                    <i class="fas fa-lock" style={{ fontSize: "15px" }}></i>
+                <div className="form-group">
+                  <label htmlFor="your_pass">
+                    <i className="fas fa-lock" style={{ fontSize: "15px" }}></i>
                   </label>
                   <input
                     type="password"
@@ -65,25 +65,25 @@ const Login = ({ signin }) => {
                     placeholder="Password"
                   />
                 </div>
-                {/* <div class="form-group">
-                            <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                            <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                {/* <div className="form-group">
+                            <input type="checkbox" name="remember-me" id="remember-me" className="agree-term" />
+                            <label for="remember-me" className="label-agree-term"><span><span></span></span>Remember me</label>
                         </div> */}
-                <div class="form-group form-button">
+                <div className="form-group form-button">
                   <input
                     type="submit"
                     name="signin"
                     id="signin"
-                    class="form-submit"
+                    className="form-submit"
                     value="Log in"
                   />
                 </div>
               </form>
-              <div class="social-login">
-                <span class="social-label">Or login with</span>
-                <ul class="socials">
+              <div className="social-login">
+                <span className="social-label">Or login with</span>
+                <ul className="socials">
                   <GoogleBtn />
-                  {/* <li><a href="#"><i class="fab fa-google" style={{fontSize: '25px'}}></i></a></li> */}
+                  {/* <li><a href="#"><i className="fab fa-google" style={{fontSize: '25px'}}></i></a></li> */}
                 </ul>
               </div>
             </div>
