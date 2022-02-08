@@ -21,7 +21,7 @@ const Login = ({ signin }) => {
   return (
     <div className="main">
       <section className="sign-in">
-        <div className="container">
+        <div className="container" style={{ background: "white" }}>
           <div className="signin-content">
             <div className="signin-image">
               <figure>
@@ -41,7 +41,9 @@ const Login = ({ signin }) => {
                 id="login-form">
                 <div className="form-group">
                   <label htmlFor="your_name">
-                    <i className="fas fa-envelope" style={{ fontSize: "15px" }}></i>
+                    <i
+                      className="fas fa-envelope"
+                      style={{ fontSize: "15px" }}></i>
                   </label>
                   <input
                     type="text"

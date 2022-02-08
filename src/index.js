@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import store from "./Redux/store";
 import { CookiesProvider } from "react-cookie";
 // import * as serviceWorker from './serviceWorker';
+import './assets/scss/style.scss';
 
 ReactDOM.render(
   <React.StrictMode>
