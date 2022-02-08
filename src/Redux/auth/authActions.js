@@ -2,6 +2,7 @@ import { auth, firestore, googleAuthProvider, serverTimeStamp } from "../../Fire
 import { REMOVE_USER, SET_USER } from "./authConstants";
 import firebase from "../../Firebase/firebase";
 import history from "../../history/history";
+import { useCookies,setCookie } from "react-cookie";
 
 export var setUser = (user) => ({
     type:SET_USER,
@@ -27,7 +28,6 @@ export var signup = ({email,password,fullName}) => async (dispatch) => {
         history.push("/")
         window.location.reload(false);
         await firestore.collection("users").doc(uid).set(userInfo)
-       
     } 
     catch (error) {
         console.log(error)
@@ -99,10 +99,13 @@ export var firebaseAuthListener = () => async (dispatch) => {
                         }
                         //action call
                         dispatch(setUser(userDataForState)); 
-                        // User is signed in.
-                    } else {
-                        // No user is signed in.
-                     dispatch(removeUser());
+                    history.push("/") 
+                    window.location.reload(false);
+                    // User is signed in.
+                } else {
+                    // No user is signed in.
+                    dispatch(removeUser());
+                     history.push("/login") 
                     }
                   });
             } catch (error) {
