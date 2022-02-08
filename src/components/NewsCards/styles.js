@@ -7,7 +7,7 @@ export default makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     width: "100%",
-    height: "60vh",
+    height: "65vh",
     padding: "10%",
     borderRadius: 10,
     color: "black",
