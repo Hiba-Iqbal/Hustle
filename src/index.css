@@ -16,3 +16,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* add background color on active */
+
+.makeStyles-activeCard-23:active {
+  background: 		#797483 !important;
+}
+.makeStyles-activeCard-23:focus {
+  background: 		#797483 !important;
+}
+.makeStyles-activeCard-23 {
+  background: 		#797483 !important;
+}
