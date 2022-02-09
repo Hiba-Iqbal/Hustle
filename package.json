@@ -14,9 +14,12 @@
     "emailjs-com": "^2.6.3",
     "firebase": "^9.6.1",
     "history": "^5.2.0",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-cookie": "^4.1.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
@@ -24,10 +27,8 @@
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
-    "words-to-numbers": "^1.5.1",
     "sass": "^1.49.7",
-    "react-ga": "^2.7.0",
-    "lodash": "^4.17.15"
+    "words-to-numbers": "^1.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
