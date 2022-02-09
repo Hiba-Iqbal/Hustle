@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'The complete Voice AI Platform',
+    paragraph: 'With Alan, you get all the tools you need in one place. Empower your developers to build, test and deploy voice interfaces in no time'
   };
 
   return (
@@ -66,15 +66,11 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                Developer-friendly suite of tools
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                Alan Studio, a simple but powerful IDE, is tailored to the challenges of voice interface design. Write and test conversational scenarios, maintain dialog versions and publish the results to a sandbox or the production environment. Focus on bigger things and let Alan take care of the rest.</p>
               </div>
               <div className={
                 classNames(
@@ -83,7 +79,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src={require('./../../images/Landing Page/img1.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -92,15 +88,12 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                Instant integration for any platform
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                With lightweight Alan SDKs, you can target any mobile and web application. Design your voice assistant once and deploy it to Web, iOS, Android, and cross-platform solutions: Flutter, React Native, React, Apache Cordova, Ionic.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -109,7 +102,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src={require('./../../images/Landing Page/img2.png')}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -118,15 +111,12 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
+                Advanced conversational analytics
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                Alan captures key data points such as users' utterances, frequency of use and session length to let you see how customers interact with a voice assistant in your app. Leverage this data to understand users' behavior and flows, identify unhandled voice commands and optimize the voice assistant effectiveness.                  
+                </p>
               </div>
               <div className={
                 classNames(
@@ -135,7 +125,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src={require('./../../images/Landing Page/img3.png')}
                   alt="Features split 03"
                   width={528}
                   height={396} />
