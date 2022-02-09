@@ -37,7 +37,6 @@ function App({ firebaseAuthListener }) {
           <AppRoute exact path="/" component={Home} />
           <AppRoute exact path="/signup" component={signUp} />
           <AppRoute exact path="/login" component={Login} />
-          {/* <AppRoute exact path="/landing" component={LandingMain} /> */}
           <AppRoute
             exact
             path="/landing"
