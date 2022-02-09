@@ -27,13 +27,18 @@ const Login = ({ signin }) => {
               <figure>
                 <img src={signinImage} alt="sing up image"></img>
               </figure>
-              <a href="/signup" className="signup-image-link">
+              <a
+                style={{ color: "black" }}
+                href="/signup"
+                className="signup-image-link">
                 Create an account
               </a>
             </div>
 
             <div className="signin-form">
-              <h2 className="form-title">Log In</h2>
+              <h2 style={{ color: "#5658DD" }} className="form-title">
+                Log In
+              </h2>
               <form
                 onSubmit={handleFormSubmit}
                 method="POST"

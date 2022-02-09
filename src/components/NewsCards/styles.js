@@ -13,6 +13,7 @@ export default makeStyles({
     color: "black",
     backgroundColor: "#242424",
   },
+  // add color on focus
   infoCard: {
     display: "flex",
     flexDirection: "column",

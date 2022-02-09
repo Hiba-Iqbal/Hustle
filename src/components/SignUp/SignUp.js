@@ -25,7 +25,9 @@ const SignUp = ({ signup }) => {
           <div class="container">
             <div class="signup-content">
               <div class="signup-form">
-                <h2 class="form-title">Sign up</h2>
+                <h2 style={{ color: "#5658DD" }} class="form-title">
+                  Sign up
+                </h2>
                 <form
                   onSubmit={handleFormSubmit}
                   method="POST"
@@ -91,7 +93,10 @@ const SignUp = ({ signup }) => {
                 <figure>
                   <img src={signupImage} alt="sing up image"></img>
                 </figure>
-                <a href="/login" class="signup-image-link">
+                <a
+                  style={{ color: "black" }}
+                  href="/login"
+                  class="signup-image-link">
                   I am already member
                 </a>
               </div>
